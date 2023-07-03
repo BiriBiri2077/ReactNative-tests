@@ -66,14 +66,28 @@ return (
 
 constructor(props){
     super(props);
+    this.nome = "brassos";
+    this.Tela = new Tela();
+    this.Tela2 = new Tela();
 
+    this.Tela.nomes = "brasse";
 }
 
 
+chamarNome(){
+    return (<Text>{this.nome}</Text>)
+}
+
+
+
 render(){
+
+    console.log(this.Tela.nome);
+
     return (
         <View>
             <Tela></Tela>
+            {this.nome()}
         </View>
     );
 }
