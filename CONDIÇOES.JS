@@ -62,7 +62,7 @@ return (
     </View>
 );
 
-
+/////////
 
 constructor(props){
     super(props);
@@ -73,12 +73,9 @@ constructor(props){
     this.Tela.nomes = "brasse";
 }
 
-
 chamarNome(){
     return (<Text>{this.nome}</Text>)
 }
-
-
 
 render(){
 
@@ -91,5 +88,6 @@ render(){
         </View>
     );
 }
+
 
 
