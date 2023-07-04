@@ -69,6 +69,10 @@ export default class App extends React.Component {
         setInterval(()=>{
             this.setState({pagina:'contato'});
         },2000)
+
+        alterarAba = (pag) => {
+            this.setState({pagina:pag});
+        }
     }
 
 
@@ -79,12 +83,14 @@ export default class App extends React.Component {
                 <View>
                     <Text>{this.state.contador}</Text>
                     <Text>brasso</Text>
+                    <Button title="clique" onPress={()=>this.alterarAba('contato')}></Button>
                 </View>
             );
         }else if(this.state.pagina == "contato"){
             <View>
                     <Text>{this.state.contador}</Text>
                     <Text>brasseidos</Text>
+                    <Button title="clique" onPress={()=>this.alterarAba('home')}></Button>
                 </View>
         }
 
