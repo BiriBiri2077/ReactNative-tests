@@ -87,11 +87,12 @@ export default class App extends React.Component {
                 </View>
             );
         }else if(this.state.pagina == "contato"){
-            <View>
+            return(
+                <View>
                     <Text>{this.state.contador}</Text>
                     <Text>brasseidos</Text>
                     <Button title="clique" onPress={()=>alterarAba('home')}></Button>
-                </View>
+                </View>)
         }
 
     }
