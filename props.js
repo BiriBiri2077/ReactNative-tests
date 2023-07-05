@@ -83,14 +83,14 @@ export default class App extends React.Component {
                 <View>
                     <Text>{this.state.contador}</Text>
                     <Text>brasso</Text>
-                    <Button title="clique" onPress={()=>this.alterarAba('contato')}></Button>
+                    <Button title="clique" onPress={()=>alterarAba('contato')}></Button>
                 </View>
             );
         }else if(this.state.pagina == "contato"){
             <View>
                     <Text>{this.state.contador}</Text>
                     <Text>brasseidos</Text>
-                    <Button title="clique" onPress={()=>this.alterarAba('home')}></Button>
+                    <Button title="clique" onPress={()=>alterarAba('home')}></Button>
                 </View>
         }
 
